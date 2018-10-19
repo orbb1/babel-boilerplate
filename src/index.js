@@ -1,3 +1,5 @@
+import './styles.scss';
+
 function printHello() {
   const rootEl = document.querySelector('.root');
   const messageEl = document.createElement('h2');
