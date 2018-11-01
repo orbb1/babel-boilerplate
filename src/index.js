@@ -1,7 +1,7 @@
 import './styles.scss';
 
 function printHello() {
-  // console.log('Hello');
+  console.log('Hello');
 }
 
 export default printHello;

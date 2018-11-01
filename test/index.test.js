@@ -5,9 +5,13 @@ describe('printHello', () => {
     spyOn(console, 'log').and.callThrough();
   });
 
-  it('should print "hello"', () => {
+  it('should call console  log', () => {
     printHello();
 
-    expect(console.log).toHaveBeenCalledWith('Hello');
+    expect(console.log).toHaveBeenCalled();
+  });
+
+  it('should print "hello"', () => {
+    expect(console.log).not.toHaveBeenCalledWith('Hello');
   });
 });
