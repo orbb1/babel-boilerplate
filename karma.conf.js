@@ -10,7 +10,7 @@ function conifigFunc(config) {
     exclude: [
     ],
     preprocessors: {
-      'test/**/*.test.js': ['webpack'],
+      'test/**/*.test.js': ['webpack', 'sourcemap'],
     },
     plugins: [
       'karma-webpack',
@@ -19,6 +19,7 @@ function conifigFunc(config) {
       'karma-firefox-launcher',
       'karma-chrome-launcher',
       'karma-spec-reporter',
+      'karma-sourcemap-loader',
     ],
     reporters: ['kjhtml', 'spec'],
     port: 9876,
