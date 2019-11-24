@@ -4,5 +4,8 @@ module.exports = {
         "browser": true,
         "node": true,
         "jasmine": true
-    }
+    },
+    "plugins": [
+        "cypress"
+      ]
 };
