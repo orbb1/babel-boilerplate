@@ -6,7 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "test": "./node_modules/karma/bin/karma start"
+    "test": "./node_modules/karma/bin/karma start",
+    "cypress": "cypress run",
+    "server": "webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",
